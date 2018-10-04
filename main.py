@@ -80,7 +80,7 @@ def validate_form():
     else:
         at_sign = "@"
         period = "."
-        if not email.count(at_sign) == 1 or not email.count(period) == 1:
+        if (not email.count(at_sign) == 1) and (not email.count(period) == 1):
             email_error = "Please type your e-mail address."
             email = ''
 
